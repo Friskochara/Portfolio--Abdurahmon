@@ -1,0 +1,122 @@
+body {
+    background: #DDCEBB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #292D33;
+    align-items: center;
+}
+
+header img:last-child {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.txt {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 50px;
+    font-family: "papyrus";
+}
+
+.txt h1 {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: "papyrus";
+}
+
+button {
+    width: 25%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-family: "Papyrus";
+    margin-left: 15%;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.logo:hover {
+    content: url('./img/3.PAPYRUSWACKY.png');
+}
+
+.fontxt {
+    width: 60%;
+    height: auto;
+    font-family: "Comic Sans MS";
+    margin-left: 20%;
+}
+
+.fontxt h1 {
+    margin-bottom: 25px;
+}
+
+.infobox {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    border-top: 5px solid orange;
+    border-bottom: 25px solid white;
+    background-color: white;
+    font-family: "Comic Sans MS";
+
+}
+
+.infobox h1 {
+    margin-bottom: 25px;
+}
+
+.infobox h3 {
+    margin-bottom: 10px;
+}
+
+#boxp {
+    font-family: "papyrus";
+}
+
+#boxcsm {
+    font-family: "Comic Sans MS";
+}
+
+#box {
+    font-family: sans-serif;
+}
+
+
+@media (max-width:480px) {}
+
+img {
+    cursor: pointer;
+}
