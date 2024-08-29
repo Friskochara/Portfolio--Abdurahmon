@@ -55,6 +55,7 @@ button {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .photo {
@@ -87,7 +88,7 @@ button:hover {
     width: 80%;
     margin-left: 10%;
     margin-top: 25px;
-    border-top: 5px solid orange;
+    border-top: 7px solid orange;
     border-bottom: 25px solid white;
     background-color: white;
     font-family: "Comic Sans MS";
