@@ -115,9 +115,6 @@ button:hover {
     font-family: sans-serif;
 }
 
-
-@media (max-width:480px) {}
-
 img {
     cursor: pointer;
-}
+} 
