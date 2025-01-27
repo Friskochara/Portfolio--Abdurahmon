@@ -52,8 +52,8 @@ button {
     font-family: "Papyrus";
     margin-left: 15%;
     margin-top: 50px;
-    transition: all 0.3s ease;
-    border: none;
+    transition: all 0.7s ease;
+    border: 3px solid black;
     cursor: pointer;
     font-weight: bold;
 }
@@ -67,10 +67,15 @@ button {
 button:hover {
     background-color: white;
     color: black;
+    border: 3px solid black;
+    width: 28%;
+    height: 60px;
 }
 
 .logo:hover {
     content: url('./img/3.PAPYRUSWACKY.png');
+    width: 85px;
+    height: 85px;
 }
 
 .fontxt {
@@ -117,4 +122,57 @@ button:hover {
 
 img {
     cursor: pointer;
-} 
+}
+.bmenu{
+    width: 50px;
+    height: 50px;
+    transition: 0.3s ease;
+}
+.bmenu:hover{
+    width: 60px;
+    height: 60px;
+}
+
+.conteiner{
+padding-left: 5%;
+width: 75%;
+background-color: rgb(255, 255, 255);
+margin: auto;
+margin-top: 10%;
+
+}
+
+.text{
+margin-top: 10%;
+}
+
+.text2{
+    max-width: 300px;
+}
+
+.help{
+    margin-left: -1px;
+    z-index: 3;
+    position: relative;
+    bottom: 400px;
+}
+
+.png{
+    max-width: 400px;
+    min-width: 100px;
+    margin-left: 20%;
+    z-index: 1;
+    margin-top: -1200px;
+}
+
+.jpg{
+    max-width: 450px;
+    min-width: 100px;
+    margin-left: 50%;
+    z-index: 2;
+    position: relative;
+    top: -200px;
+}
+.foot{
+    display: flex;
+}
