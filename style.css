@@ -97,6 +97,7 @@ button:hover {
     border-bottom: 25px solid white;
     background-color: white;
     font-family: "Comic Sans MS";
+    border-radius: 10px;
 
 }
 
@@ -123,56 +124,168 @@ button:hover {
 img {
     cursor: pointer;
 }
-.bmenu{
+
+.chat {
     width: 50px;
     height: 50px;
     transition: 0.3s ease;
 }
-.bmenu:hover{
+
+.chat:hover {
     width: 60px;
     height: 60px;
 }
 
-.conteiner{
-padding-left: 5%;
-width: 75%;
-background-color: rgb(255, 255, 255);
-margin: auto;
-margin-top: 10%;
-
+header h1{
+    color: gray;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
-.text{
-margin-top: 10%;
+header h1:hover{
+color: darkgrey;
+font-size: 2.5em;
 }
 
-.text2{
-    max-width: 300px;
-}
+/* __________________________________________________________________ */
 
-.help{
-    margin-left: -1px;
-    z-index: 3;
-    position: relative;
-    bottom: 400px;
-}
+.container {
 
-.png{
-    max-width: 400px;
-    min-width: 100px;
-    margin-left: 20%;
-    z-index: 1;
-    margin-top: -1200px;
-}
-
-.jpg{
-    max-width: 450px;
-    min-width: 100px;
-    margin-left: 50%;
-    z-index: 2;
-    position: relative;
-    top: -200px;
-}
-.foot{
+    border-top: 7px solid orange;
+    margin-top: 3%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 2.8em;
+    color: #333;
+}
+
+.text-section p {
+    font-size: 1.7em;
+    color: #666;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #e3d4c3;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.4em;
+    color: #666;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #292D33;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info-item {
+    padding: 10px;
+    border-left: 3px solid darkgrey;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section,
+    .image-section {
+        max-width: 100%;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+img {
+    transition: all 0.7s ease;
+}
+
+img:hover {
+    border-radius: 25px;
+}
+
+footer {
+    height: 85px;
+    background-color: #292D33;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 50px;
+    text-shadow: whitesmoke;
+    font-family: "Comic Sans MS";
+}
+
+footer p{
+    /* margin-top: 10px; */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container button{
+width: 200px;
+}
+.container button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    width: 225px;
+    height: 60px;
 }
