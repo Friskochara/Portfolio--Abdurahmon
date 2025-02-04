@@ -56,6 +56,7 @@ button {
     border: 3px solid black;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 0px 0px 30px black;
 }
 
 .photo {
@@ -70,6 +71,7 @@ button:hover {
     border: 3px solid black;
     width: 28%;
     height: 60px;
+    box-shadow: 0px 0px 30px whitesmoke;
 }
 
 .logo:hover {
@@ -98,7 +100,7 @@ button:hover {
     background-color: white;
     font-family: "Comic Sans MS";
     border-radius: 10px;
-
+    box-shadow: 0px 0px 15px black;
 }
 
 .infobox h1 {
@@ -136,7 +138,7 @@ img {
     height: 60px;
 }
 
-header h1{
+header h1 {
     color: gray;
     font-family: "Comic Sans MS";
     font-weight: bold;
@@ -144,9 +146,9 @@ header h1{
     cursor: pointer;
 }
 
-header h1:hover{
-color: darkgrey;
-font-size: 2.5em;
+header h1:hover {
+    color: darkgrey;
+    font-size: 2.5em;
 }
 
 /* __________________________________________________________________ */
@@ -164,7 +166,6 @@ font-size: 2.5em;
     background: #fff;
     justify-content: center;
     align-items: center;
-
 }
 
 .text-section {
@@ -199,10 +200,10 @@ button {
 .about-section {
     text-align: center;
     padding: 50px;
-    background-color: #e3d4c3;
+    background-color: #DDCEBB;
 }
 
-.about-section h2 {
+.about-section h1 {
     font-size: 2em;
     color: #333;
 }
@@ -216,18 +217,21 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 800px;
+    max-width: 856px;
     margin: auto;
     background-color: #292D33;
     color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: 0px 0px 30px black;
 }
 
 .info-item {
     padding: 10px;
+    color: whitesmoke;
     border-left: 3px solid darkgrey;
+    transition: 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -255,37 +259,144 @@ img:hover {
 }
 
 footer {
-    height: 85px;
+    height: 90px;
     background-color: #292D33;
     color: #fff;
     padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
-}
-footer a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    margin-left: 50px;
-    text-shadow: whitesmoke;
-    font-family: "Comic Sans MS";
+    display: flex;
+    margin-top: 50px;
 }
 
-footer p{
-    /* margin-top: 10px; */
+footer a {
     text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-left: 50px;
+    font-family: "Comic Sans MS";
+    transition: 0.3s ease;
 }
-.container button{
-width: 200px;
+
+footer a:hover {
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 1.7em;
+
+
 }
-.container button:hover{
+
+.container button {
+    width: 200px;
+}
+
+.container button:hover {
     background-color: white;
     color: black;
     border: 3px solid black;
     width: 225px;
     height: 60px;
+}
+
+.achiv {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.acvmnt {
+    text-align: center;
+    color: orange;
+    font-size: 3.5em;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.acvmnt .cmt {
+    font-size: 0.6em;
+    color: #292D33;
+}
+
+.h {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.info-item:hover {
+    border-left: 6px solid whitesmoke;
+    color: white;
+
+}
+
+.info-item p {
+    transition: 0.3s ease;
+}
+
+.info-item p:hover {
+    color: rgb(200, 200, 200);
+}
+
+.txp {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.txp:hover {
+    font-size: 1.2em;
+    color: darkorange;
+}
+
+.white-div {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px black;
+}
+
+.head {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h3 {
+    color: #e2952a;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    width: 920px;
+}
+
+.arrow img {
+    width: 50px;
+    height: 50px;
 }
